@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-09-06 13:08",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/debank-favicon.png",
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap:https://dobonk.github.io/sitemap.xml\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://dobonk.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "ehy2nbahbz",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "DeBank | Home Official Site",
+        "meta_descr": "DeBank has established itself as a valuable tool for DeFi enthusiasts and investors, offering a comprehensive suite of features designed to simplify portfolio management and enhance the user experience.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://debank.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/debank.png\" alt=\"DeBank\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "unzSKlMCqa",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><p>\n            <b>DeBank | Home</b></p></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>DeBank: Navigating the Future of DeFi Portfolio Management</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">As decentralized finance (DeFi) continues to evolve, the tools available for managing and optimizing DeFi investments have become increasingly sophisticated. One such tool that has garnered attention in the crypto community is DeBank. This comprehensive platform offers users a streamlined approach to tracking and managing their DeFi assets, making it easier to navigate the complex landscape of decentralized finance. In this article, we will explore DeBank’s features, its significance in the DeFi ecosystem, and how it can enhance your DeFi experience.<br><br>Understanding DeBank<br>DeBank is a multi-chain DeFi portfolio tracker and management platform designed to simplify the user experience in the decentralized finance space. Launched in 2018, DeBank has quickly established itself as a go-to resource for DeFi enthusiasts and investors. The platform supports a wide range of DeFi protocols and provides users with tools to track their assets, monitor their investments, and make informed decisions.<br><br>At its core, DeBank aims to address some of the key challenges faced by DeFi users, such as the fragmentation of information across different protocols and the complexity of managing multiple assets and investments. By consolidating this information into a single interface, DeBank offers a more coherent and user-friendly experience.<br><br>Key Features of DeBank<br>Multi-Chain Support: One of DeBank’s standout features is its support for multiple blockchains. The platform integrates with major DeFi ecosystems, including Ethereum, Binance Smart Chain, Polygon, and more. This multi-chain approach allows users to track assets and investments across various networks from a single dashboard, eliminating the need to switch between different platforms.<br><br>Comprehensive Portfolio Tracking: DeBank offers a detailed overview of a user’s DeFi portfolio, including assets held, yields earned, and positions across various protocols. The platform aggregates data from decentralized exchanges (DEXs), lending platforms, and yield farming services, providing users with a unified view of their investments. This feature is especially useful for managing complex portfolios with assets spread across multiple protocols.<br><br>Real-Time Data and Analytics: Real-time data is crucial for making informed investment decisions in the fast-paced world of DeFi. DeBank provides up-to-date information on asset prices, liquidity pools, and lending rates. Additionally, the platform offers analytics tools that help users assess their investment performance and identify opportunities for optimization.<br><br>Transaction Management: DeBank’s transaction management feature allows users to track and manage their DeFi transactions in one place. This includes viewing transaction histories, checking transaction statuses, and analyzing gas fees. By centralizing transaction information, DeBank helps users keep track of their activity and manage their portfolios more effectively.<br><br>Customizable Dashboard: The platform’s customizable dashboard allows users to personalize their DeFi experience. Users can choose which metrics to display, set up alerts for specific events, and organize their portfolio view according to their preferences. This level of customization ensures that users can tailor their experience to meet their individual needs and investment strategies.<br><br>DeFi Protocol Integration: DeBank integrates with a wide range of DeFi protocols, including popular ones like Uniswap, Aave, Compound, and Yearn.Finance. This integration allows users to interact directly with these protocols through the DeBank interface, streamlining the process of managing investments and executing transactions.<br><br>Security and Privacy: Security and privacy are paramount in the DeFi space, and DeBank takes these concerns seriously. The platform employs industry-standard security measures to protect user data and assets. Additionally, DeBank’s decentralized approach means that users retain control over their private keys and sensitive information.<br><br>The Significance of DeBank in the DeFi Ecosystem<br>DeBank’s emergence as a leading DeFi portfolio management tool reflects the growing need for sophisticated solutions in the decentralized finance space. As DeFi protocols become more complex and diverse, users require tools that can provide a comprehensive view of their investments and streamline their management.<br><br>Enhanced Transparency: By aggregating data from multiple sources, DeBank enhances transparency in the DeFi ecosystem. Users can easily track their assets and investments, gaining a clearer understanding of their financial position. This transparency helps build trust and confidence in the DeFi space.<br><br>Simplified User Experience: The complexity of DeFi can be overwhelming for new and experienced users alike. DeBank simplifies the user experience by consolidating information and providing intuitive tools for managing assets. This simplification lowers the barrier to entry for users and promotes greater participation in the DeFi ecosystem.<br><br>Improved Decision-Making: Access to real-time data and analytics empowers users to make informed investment decisions. DeBank’s analytics tools help users assess their performance, identify trends, and optimize their strategies. This data-driven approach enhances the overall efficiency of DeFi investments.<br><br>Streamlined Management: Managing a diverse DeFi portfolio requires careful coordination across multiple protocols. DeBank’s centralized dashboard streamlines this management process, allowing users to monitor and control their investments from a single interface. This efficiency is crucial for navigating the fast-paced DeFi market.<br><br>Future Developments and Potential<br>As DeFi continues to evolve, DeBank is likely to expand its features and capabilities. Potential future developments could include enhanced support for emerging DeFi protocols, advanced analytics tools, and integration with additional blockchain networks. The platform’s focus on innovation and user experience positions it well for continued growth in the DeFi space.<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "unzSLOIr79",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
